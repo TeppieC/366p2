@@ -17,4 +17,3 @@ printTileCoderIndices(0.1,0.1)
 printTileCoderIndices(4.0,2.0)
 printTileCoderIndices(5.99,5.99)
 printTileCoderIndices(4.0,2.1)
-

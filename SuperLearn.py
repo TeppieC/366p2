@@ -2,7 +2,7 @@ from pylab import zeros, sin, cos, normal, random
 from Tilecoder import numTilings, tilecode
 
 n = 968   # initialize the total number of tiles across all tilings here
-theta = [0.0]*968    # initialize weights appropriately here
+theta = [0.0]*n    # initialize weights appropriately here
 alpha = 0.1/numTilings    # initialize step size parameter appropriately here
 tileIndices = [-1]*numTilings  # initialize your list of tile indices here
 
@@ -11,7 +11,7 @@ def f(in1, in2):
     sum = 0.0
     tilecode(in1,in2,tileIndices)
     for i in tileIndices:
-        sum = sum + theta[i]
+        sum = sum + theta[i]*1
     return sum
     
 def learn(in1, in2, target):
